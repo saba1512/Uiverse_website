@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="left-header">
+                <button class="button" data-text="Awesome">
+                    <span class="actual-text">&nbsp;uiverse&nbsp;</span>
+                    <span aria-hidden="true" class="hover-text">&nbsp;uiverse&nbsp;</span>
+                </button>
+
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="right-header">
+                <button class="sign">sign up</button>
+                <button class="sign">sign in</button>
+                <button id="modes">Night Mode</button>
+
+                <div class="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="nav-link">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </nav>
+            <div class="signs">
+                <button class="sign sign-nav">sign up</button>
+                <button class="sign sign-nav">sign in</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <form action="https://www.youtube.com/results" method="get" target="_blank">
+                <div class="group">
+                    <svg class="icon" aria-hidden="true" viewBox="0 0 24 24">
+                        <g>
+                            <path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path>
+                        </g>
+                    </svg>
+                    <input placeholder="Search" type="search" class="input" name="search_query">
+                    
+                    <button type="submit" style="display: none;"></button>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
