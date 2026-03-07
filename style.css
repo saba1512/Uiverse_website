@@ -79,9 +79,66 @@ nav{
     flex-direction: column;
     padding: 20px 0;
     align-items: center;
+    background: linear-gradient(135deg, #d9e8d8 0%, #d9e8d850 100%);
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.highlight{
+    color: #37FF8B;
+    font-family: "Arial";
+}
+
+.group{
+    margin-top: 40px;
+}
+
+.hero-p{
+    margin-top: 50px;
+    color: #409161;
+    font-family: "Arial";
+    text-align: center;
+    max-width: 400px;
 }
 
 
+summary {
+    list-style: none;
+    cursor: pointer;
+    outline: none;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+.more-btn {
+    color: #37FF8B;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.extra-text {
+    margin-top: 10px;
+    animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-5px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+details[open] summary .more-btn {
+    display: none;
+}
+
+.NightMode .hero {
+    background: linear-gradient(135deg, #2a2a2a 0%, #1d1d1d 100%);
+}
+
+.NightMode .hero-p {
+    color: #ccc;
+}
 
 
 /* --------------------------nav bar--------------------- */
@@ -241,8 +298,24 @@ nav{
     height: 1rem;
 }
 
+.NightMode .input {
+    background-color: #2a2a2a; 
+    color: #37FF8B;         
+    box-shadow: 0 0 5px #111, 0 0 0 10px #252525; 
+}
 
+.NightMode .input::placeholder {
+    color: #555;
+}
 
+.NightMode .icon {
+    fill: #37FF8B;
+}
+
+.NightMode .input:focus {
+    border-color: #37FF8B;
+    box-shadow: 0 0 15px rgba(55, 255, 139, 0.2), 0 0 0 10px #252525;
+}
 
 
 
@@ -266,6 +339,22 @@ nav{
     .nav-link {
         padding: 60px;
     }
+
+    .hero h1{
+        font-size: 2.3em;
+    }
+
+    .group{
+        width: 900px;
+    }
+
+    summary{
+        font-size: 20px;
+    }
+
+    .extra-text{
+        font-size: 20px;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -288,10 +377,22 @@ nav{
     .burger{
         display: none;
     }
+
+    .hero h1{
+        font-size: 3em;
+    }
+
+    .group{
+        max-width: 350px;
+    }
 }
 
 @media (min-width: 1300px) {
     .header-container{
+        max-width: 1200px;
+    }
+
+    .hero{
         max-width: 1200px;
     }
 }
