@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./sign_up_in.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="left-header">
+                <button class="button" data-text="Awesome">
+                    <span class="actual-text">&nbsp;uiverse&nbsp;</span>
+                    <span aria-hidden="true" class="hover-text">&nbsp;uiverse&nbsp;</span>
+                </button>
+
+                <nav>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./about.html">About</a></li>
+                        <li><a href="./gallery.html">Gallery</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="right-header">
+                <a href="./sign_up.html" class="sign">sign up</a>
+                <a href="./sign_in.html" class="sign">sign in</a>
+                <button id="modes">Night Mode</button>
+
+                <div class="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="nav-link">
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
+            <div class="signs">
+                <a href="./sign_up.html" class="sign sign-nav">sign up</a>
+                <a href="./sign_in.html" class="sign sign-nav">sign in</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="sign-up-hero"> <div class="form-container">
+                <p class="title">Welcome Back</p>
+                <form class="form">
+                    <div class="input-group">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Enter your email">
+                    </div>
+                    <div class="input-group">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" placeholder="Enter password">
+                        <div class="forgot">
+                            <a rel="noopener noreferrer" href="#">Forgot Password?</a>
+                        </div>
+                    </div>
+                    <button class="sign-btn">Sign In</button>
+                </form>
+                
+                <div class="social-message">
+                    <div class="line"></div>
+                    <p class="message">Login with social accounts</p>
+                    <div class="line"></div>
+                </div>
+                
+                <p class="signup">Don't have an account?
+                    <a rel="noopener noreferrer" href="./sign_up.html" class="">Sign Up</a>
+                </p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

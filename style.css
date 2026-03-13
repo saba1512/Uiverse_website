@@ -102,44 +102,145 @@ nav{
 }
 
 
-summary {
-    list-style: none;
-    cursor: pointer;
-    outline: none;
-}
-
-summary::-webkit-details-marker {
+.extra-p{
     display: none;
 }
 
-.more-btn {
+.more-btn, .less-btn{
     color: #37FF8B;
+    cursor: pointer;
     font-weight: bold;
     text-decoration: underline;
 }
 
-.extra-text {
-    margin-top: 10px;
-    animation: fadeIn 0.4s ease;
+.extra-p-show {
+    display: inline;
 }
 
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(-5px); }
-    to { opacity: 1; transform: translateY(0); }
+.NightMode .hero{
+    background: linear-gradient(135deg, #2a2a2a 0%, #2a2a2a50 100%);
 }
 
-details[open] summary .more-btn {
-    display: none;
+/* --------------------------about section--------------------- */
+
+#about-hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 50px 20px;
+    flex-wrap: wrap;
 }
 
-.NightMode .hero {
-    background: linear-gradient(135deg, #2a2a2a 0%, #1d1d1d 100%);
+.pricing-card {
+    background: white;
+    border-radius: 20px;
+    width: 300px;
+    border: 1px solid #e0e0e0;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
 
-.NightMode .hero-p {
+.pricing-card:hover {
+    transform: translateY(-10px);
+}
+
+.badge {
+    background: #4a148c;
+    color: white;
+    text-align: center;
+    padding: 8px 0;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.card-content {
+    padding: 40px 30px;
+    text-align: center;
+}
+
+.plan-name {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.price-box {
+    margin-bottom: 30px;
+}
+
+.amount {
+    font-size: 48px;
+    font-weight: bold;
+    color: #1d1d1d;
+}
+
+.currency, .period {
+    font-size: 20px;
+    color: #666;
+}
+
+.upgrade-btn {
+    background: #ff0050; 
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 15px;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    margin-bottom: 30px;
+    transition: 0.3s;
+}
+
+.upgrade-btn:hover {
+    background: #e60048;
+    box-shadow: 0 5px 15px rgba(255, 0, 80, 0.3);
+}
+
+.features {
+    list-style: none;
+    text-align: left;
+    padding: 0;
+}
+
+.features li {
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #444;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.check {
+    background: #efefff;
+    color: #6366f1;
+    width: 22px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 12px;
+}
+
+.NightMode .pricing-card {
+    background: #2a2a2a;
+    border-color: #444;
+}
+
+.NightMode .plan-name, .NightMode .amount {
+    color: #37FF8B;
+}
+
+.NightMode .features li {
     color: #ccc;
 }
-
 
 /* --------------------------nav bar--------------------- */
 .nav-link {

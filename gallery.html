@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./gallery.css">
+    <script src="gallery.js" defer></script>
     <script src="index.js" defer></script>
-    <link rel="stylesheet" href="./about.css">
 </head>
 <body>
     <header>
@@ -48,35 +49,16 @@
                 </ul>
             </nav>
             <div class="signs">
-                <button class="sign sign-nav">sign up</button>
-                <button class="sign sign-nav">sign in</button>
+                <a class="sign sign-nav" href="./sign_up.html">sign up</a>
+                <a class="sign sign-nav" href="./sign_in.html">sign in</a>
             </div>
         </div>
     </header>
     <main>
-        <section class="hero">
-            <h1>Explore the <span class="highlight">Uiverse</span></h1>
+        <section id="gallery-hero">
+            <button id="add-btn">add</button>
 
-            <form action="https://www.youtube.com/results" method="get" target="_blank">
-                <div class="group">
-                    <svg class="icon" aria-hidden="true" viewBox="0 0 24 24">
-                        <g>
-                            <path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path>
-                        </g>
-                    </svg>
-                    <input placeholder="Search" type="search" class="input" name="search_query">
-                    
-                    <button type="submit" style="display: none;"></button>
-                </div>
-            </form>
-
-            <div class="hero-p">
-                <span>Get inspired by the best components for your next project. it will help you to customize and build amazing websites... <span class="more-btn">more</span></span>
-
-                <span class="extra-p">Our library offers a vast collection of open-source UI elements, from buttons to complex layouts, all ready to be integrated into your workflow. Start creating today! <span class="less-btn">less</span></span>
-            </div>
-            
-            <div id="about-hero">
+            <div id="gallery-cards">
             </div>
         </section>
     </main>
